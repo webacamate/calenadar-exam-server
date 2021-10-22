@@ -15,7 +15,7 @@ const write= (d)=> { //
 };
 
 // app.use(morgan("tiny")); 
-app.use(express.static('static')); 
+app.use(express.static('docs')); 
 app.get('/hola', (req, res) => res.send('Hello World!'));
 app.get('/log',(req,res)=>{
     const clientIp = requestIp.getClientIp(req);
